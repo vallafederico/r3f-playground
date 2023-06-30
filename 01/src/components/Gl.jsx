@@ -1,15 +1,14 @@
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useRef } from "react";
-import {
-  Bloom,
-  DepthOfField,
-  EffectComposer,
-  Noise,
-  Vignette,
-  Grid,
-} from "@react-three/postprocessing";
-import { BlendFunction } from "postprocessing";
+// import {
+//   Bloom,
+//   DepthOfField,
+//   EffectComposer,
+//   Noise,
+//   Vignette,
+//   Grid,
+// } from "@react-three/postprocessing";
+// import { BlendFunction } from "postprocessing";
 
 import { Model } from "./model";
 

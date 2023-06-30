@@ -51,7 +51,7 @@ export function Model({ position = [0, 0, 0] }) {
     <mesh
       geometry={scene.children[0].geometry}
       ref={mesh}
-      scale={0.01}
+      scale={0.015}
       position={position}
     >
       <program
