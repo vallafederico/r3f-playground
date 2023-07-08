@@ -1,16 +1,7 @@
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-// import {
-//   Bloom,
-//   DepthOfField,
-//   EffectComposer,
-//   Noise,
-//   Vignette,
-//   Grid,
-// } from "@react-three/postprocessing";
-// import { BlendFunction } from "postprocessing";
 
-import { Model } from "./model";
+import { Scene } from "./Scene";
 
 export default function Gl() {
   return (
@@ -24,19 +15,8 @@ export default function Gl() {
           // setClearColor: "#ff0000",
         }}
       >
-        {/* <Plane /> */}
-
-        <Model position={[0, 0, 0]} />
-
+        <Scene />
         <OrbitControls />
-
-        {/* <EffectComposer>
-          <Grid
-            blendFunction={BlendFunction.OVERLAY} // blend mode
-            scale={2.0} // grid pattern scale
-            lineWidth={0.0} // grid pattern line width
-          />
-        </EffectComposer> */}
       </Canvas>
     </div>
   );
